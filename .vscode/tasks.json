@@ -7,7 +7,7 @@
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/pavlovLab.csproj"
+                "${workspaceFolder}/RCSPlab.csproj"
             ],
             "problemMatcher": "$msCompile"
         },
@@ -17,7 +17,7 @@
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/pavlovLab.csproj"
+                "${workspaceFolder}/RCSPlab.csproj"
             ],
             "problemMatcher": "$msCompile"
         }
