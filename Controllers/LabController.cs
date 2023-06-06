@@ -6,11 +6,16 @@ using RCSP.Storage;
 
 namespace RCSP.Controllers
 {
-    [Route("api/[controller]")]
+[Route("api/[controller]")]
     [ApiController]
     public class LabController : ControllerBase
     {
-        private static IStorage<LabData> _memCache = new MemCache();
+        private IStorage<LabData> _memCache;
+
+        public LabController(IStorage<LabData> memCache)
+        {
+            _memCache = memCache;
+        }
 
         [HttpGet]
         public ActionResult<IEnumerable<LabData>> Get()
